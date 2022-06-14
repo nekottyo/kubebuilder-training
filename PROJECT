@@ -1,0 +1,20 @@
+domain: nekottyo.github.io
+layout:
+- go.kubebuilder.io/v3
+projectName: kubebuilder-training
+repo: github.com/nekottyo/kubebuilder-training
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: nekottyo.github.io
+  group: view
+  kind: MarkdownView
+  path: github.com/nekottyo/kubebuilder-training/api/v1
+  version: v1
+  webhooks:
+    defaulting: true
+    validation: true
+    webhookVersion: v1
+version: "3"
