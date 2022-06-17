@@ -76,6 +76,19 @@ make manifests
 
 More information can be found via the [Kubebuilder Documentation](https://book.kubebuilder.io/introduction.html)
 
+### Development
+
+```console
+❯ kind create cluster
+❯ kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/latest/download/cert-manager.yaml
+❯ make manifest
+❯ make docker-build
+❯ kind load docker-image controller:latest
+❯ make install
+❯ make deploy
+```
+
+
 ## License
 
 Copyright 2022.

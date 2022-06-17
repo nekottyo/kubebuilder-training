@@ -11,4 +11,3 @@ spec:
       # Page 1
       一ページ目のコンテンツです。
   replicas: 1
-  viewerImage: "peaceiris/mdbook:latest"

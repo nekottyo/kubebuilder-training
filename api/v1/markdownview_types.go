@@ -38,7 +38,7 @@ type MarkdownViewSpec struct {
 	Replicas int32 `json:"replicas,omitempty"`
 
 	// ViewerImage is the image name of the viewer.
-	//-optional
+	//+optional
 	ViewerImage string `json:"viewerImage,omitempty"`
 }
 
